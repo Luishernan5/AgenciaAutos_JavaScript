@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Autos</title>
+    <!-- Enlace a Styles: -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Iconos para redes sociales login: -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Enlace para script: -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="login">
+        <div class="login-container">
+            <div class="logo">
+                <img src="img\Churris.jpg" alt="imagenicon">
+            </div>
+            <!-- Titulo Prinipal-->
+            <h2>Iniciar Sesión</h2>
+            <!-- Etiquetas de datos: -->
+            <input type="text" id="usuario" placeholder="Usuario">
+            <input type="password" id="contrasena" placeholder="Contraseña">
+            <!-- Boton para iniciar sesion -->
+            <button onclick="validarLogin()">Entrar</button>
+            <!-- Apartado de enlaces a redes sociales: -->
+            <div class="redes-sociales">
+                <div class="red facebook" onclick="window.open('https://facebook.com', '_blank')">
+                    <i class="fab fa-facebook"></i>
+                </div>
+                <div class="red twitter" onclick="window.open('https://twitter.com', '_blank')">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="red instagram" onclick="window.open('https://instagram.com', '_blank')">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <div class="red youtube" onclick="window.open('https://youtube.com', '_blank')">
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Segunda ventana: -->
+    <div id="menu-principal">
+        <div class="menu-container">
+            <button class="marca-icono" onclick="regreso()">
+            <!-- Imagen boton de regreso: -->
+            <img src="img\Flecha.png" alt="regreso" width="50"></button>
+            
+            <!-- Titulo menu principal: -->
+            <h1>M E N Ú     P R I N C I P A L</h1>
+            <!-- Botones par ingreso a ventanas de autos: -->
+            <div class="botones-menu">
+                <button class="menu-boton" onclick="mostrarSeccion('sedan')">SEDANES</button>
+                <button class="menu-boton" onclick="mostrarSeccion('suv')">SUV</button>
+                <button class="menu-boton" onclick="mostrarSeccion('deportivo')">DEPORTIVOS</button>
+            </div>
+        </div>
+    </div>
+    <!-- Imagen menu principal-->
+    <div id="imagen-principal">
+        <img src="img/Agencia.webp" alt="Imagen Agencia">
+    </div>
+    <!-- Ventana de autos SEDANES: -->
+    <div id="sedan" class="contenedor">
+        <h1>S E D A N E S</h1>
+        <div class="autos-grid">
+            <div class="auto"><img src="img/Auto1.png" alt="Auto 1"><h3>Marca: Toyota </h3> <p><h3>Modelo: Camry 2025</h3> <p><h3>Precio: $599,900</h3></p></div>
+            <div class="auto"><img src="img/Auto2.jpg" alt="Auto 2"><h3>Marca: Honda </h3> <p><h3>Modelo: Accord 2024</h3> <p><h3>Precio: $779,900</h3></p></div>
+            <div class="auto"><img src="img/Auto3.png" alt="Auto 3"><h3>Marca: Nissan </h3> <p><h3>Modelo: Altima 2024</h3> <p><h3>Precio: $737,900</h3></p></div>
+            <div class="auto"><img src="img/Auto4.png" alt="Auto 4"><h3>Marca: Volkswagen </h3> <p><h3>Modelo: Jetta 2024</h3> <p><h3>Precio: $400,000</h3></p></div>
+            <div class="auto"><img src="img/Auto5.jpg" alt="Auto 5"><h3>Marca: Mazda </h3> <p><h3>Modelo: Mazda 6 2024</h3> <p><h3>Precio: $650,000</h3></p></div>
+            <div class="auto"><img src="img/Auto6.png" alt="Auto 6"><h3>Marca: Hyundai </h3> <p><h3>Modelo: Elantra 2024</h3> <p><h3>Precio: $380,000</h3></p></div>
+        </div>
+    </div>
+    <!-- Ventana de autos SUV: -->
+    <div id="suv" class="contenedor">
+        <h1>S U V</h1>
+        <div class="autos-grid">
+            <div class="auto"><img src="img/Auto7.png" alt="Auto 7"><h3>Marca: Toyota </h3> <p><h3>Modelo: RAV4 2025</h3> <p><h3>Precio: $807,400</h3></p></div>
+            <div class="auto"><img src="img/Auto8.png" alt="Auto 8"><h3>Marca: Cadillac </h3> <p><h3>Modelo: Optiq 2025</h3> <p><h3>Precio: $1,289,900</h3></p></div>
+            <div class="auto"><img src="img/Auto9.jpg" alt="Auto 9"><h3>Marca: Kia </h3> <p><h3>Modelo: Seltos 2025</h3> <p><h3>Precio: $549,900</h3></p></div>
+            <div class="auto"><img src="img/Auto10.jpg" alt="Auto 10"><h3>Marca: Volkswagen </h3> <p><h3>Modelo: Taos 2024</h3> <p><h3>Precio: $649,000</h3></p></div>
+            <div class="auto"><img src="img/Auto11.png" alt="Auto 11"><h3>Marca: Chevrolet </h3> <p><h3>Modelo: Tracker 2024</h3> <p><h3>Precio: $469,900</h3></p></div>
+            <div class="auto"><img src="img/Auto12.jpg" alt="Auto 12"><h3>Marca: Ford </h3> <p><h3>Modelo: Escape 2024</h3> <p><h3>Precio: $749,000</h3></p></div>
+        </div>
+    </div>
+    <!-- Ventana de autos DEPORTIVOS: -->
+    <div id="deportivo" class="contenedor">
+        <h1>D E P O R T I V O S</h1>
+        <div class="autos-grid">
+            <div class="auto"><img src="img/Auto13.jpg" alt="Auto 13"><h3>Marca: Nissan </h3> <p><h3>Modelo: GT-R 2025</h3> <p><h3>Precio: $2,600,000</h3></p></div>
+            <div class="auto"><img src="img/Auto14.jpg" alt="Auto 14"><h3>Marca: Porsche </h3> <p><h3>Modelo: 911 GT3 RS 2025</h3> <p><h3>Precio: $4,778,000</h3></p></div>
+            <div class="auto"><img src="img/Auto15.jpg" alt="Auto 15"><h3>Marca: Ford </h3> <p><h3>Modelo: Mustang Shelby GT500 2023</h3> <p><h3>Precio: $1,400,000</h3></p></div>
+            <div class="auto"><img src="img/Auto16.png" alt="Auto 16"><h3>Marca: BMW </h3> <p><h3>Modelo: M4 Coupé 2024</h3> <p><h3>Precio: $3,000,000</h3></p></div>
+            <div class="auto"><img src="img/Auto17.png" alt="Auto 17"><h3>Marca: Audi </h3> <p><h3>Modelo: RS5 Coupé 2024</h3> <p><h3>Precio: $2,300,000</h3></p></div>
+            <div class="auto"><img src="img/Auto18.png" alt="Auto 18"><h3>Marca: Chevrolet </h3> <p><h3>Modelo: Corvette Z06 2024</h3> <p><h3>Precio: $3,000,000</h3></p></div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <h3>Contacto</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Dirección: Carretera Jilotepec Corrales San Pablo</p>
+            <p><i class="fas fa-phone"></i> Teléfono: +52 55 47 92 30 83</p>
+            <p><i class="fas fa-envelope"></i> Correo: niñoduro10@gmail.com</p>
+        </div>
+</footer>
+
+</html>
