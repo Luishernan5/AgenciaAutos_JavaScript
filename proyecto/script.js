@@ -1,10 +1,10 @@
-//Funcion de los botones de la pagina
+//Funcion de los botones de la pagina: 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("menu-principal").style.display = "none";
     document.querySelectorAll(".contenedor").forEach(seccion => seccion.style.display = "none");
     document.getElementById("imagen-principal").style.display = "none";
 });
-//Validar usuario y contraseña
+//Validar usuario y contraseña: 
 function validarLogin() {
     let usuario = document.getElementById("usuario").value;
     let contrasena = document.getElementById("contrasena").value;
@@ -19,7 +19,7 @@ function validarLogin() {
         "Vector": "55"
     };
 
-    //Contraseña y Usuario
+    //Contraseña y Usuario:
     if (usua[usuario] && usua[usuario] == contrasena) {
         document.getElementById("login").style.display = "none";
         document.getElementById("menu-principal").style.display = "flex";
