@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".contenedor").forEach(seccion => seccion.style.display = "none");
     document.getElementById("imagen-principal").style.display = "none";
 });
-//Validar usuario y contraseña 
+// Validar usuario y contraseña 
 function validarLogin() {
     let usuario = document.getElementById("usuario").value;
     let contrasena = document.getElementById("contrasena").value;
