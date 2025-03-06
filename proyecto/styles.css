@@ -6,7 +6,7 @@ body {
     background-color: #1e3a5f;
 }
 
-/* Diseño general ventana Login */
+/* Diseño general ventana Login: */
 #login {
     display: flex;
     justify-content: center;
